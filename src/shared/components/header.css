@@ -1,0 +1,80 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #646464;
+    padding: 10px 100px;
+}
+.top-header .top-L{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+.top-header .top-L i{
+    font-size: 25px;
+}
+
+.top-header .top-R{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.top-header .top-R i{
+    color: #fff;
+    font-size: 25px;
+}
+.top-header .top-R input{
+    padding:10px 50px;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.bottom-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #9B9B9B;
+}
+
+.bottom-header .tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.bottom-header .tabs a{
+    color: black;
+    text-decoration: none;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.bottom-header .tabs .active{
+    color: #fff;
+    border-bottom: solid 5px #28C76F;
+}
+
+.bottom-header button{
+    padding: 15px 40px;
+    background-color: #28C76F;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+

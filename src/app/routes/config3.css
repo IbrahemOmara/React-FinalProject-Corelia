@@ -1,0 +1,62 @@
+.container{
+
+    padding: 20px 100px;
+    min-height: 100vh;
+
+}
+
+.container .top-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    padding:50px  20px;
+    background-color: #ffff;
+}
+
+.container .top-btn a{
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #374AF9;
+    cursor: pointer;
+}
+
+.container .top-btn .disable{
+    background-color: #B9B9C3;
+    color: #646464;
+    cursor: progress;
+}
+
+.Data-Table{
+    padding: 0px 0px;
+    background-color: #ffff;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+}
+th{
+    background-color: #9B9B9BC9;
+}
+
+
+th, td {
+    text-align: left;
+    padding: 30px 50px;
+}
+
+tr{
+    background-color: #f2f2f2;
+    border-bottom: solid 1px black;
+}
+
+.Data-Table span{
+    color: #646464;
+    font-size: smaller;
+    padding: 0px;
+    background-color: #F1EEEE;
+}
