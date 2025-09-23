@@ -1,0 +1,152 @@
+.container{
+    background-color: #F1EEEE;
+    padding: 0px;
+}
+
+.sub-header{
+    background-color: #BEBEBE;
+}
+
+.content, .Data-Table{
+    background-color: #ffff;
+    margin: 20px 100px;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.content h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.select-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.select-box select{
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.Summery{
+    display: flex;
+    flex-direction: column;
+}
+.chart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.chart span{
+    background-color: white;
+}
+canvas{
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.Lasted-update, .Release-date{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.Lasted-update span{
+    color: #374AF9;
+    margin-bottom: 15px;
+    background-color:white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.Release-date span{
+    margin-bottom: 15px;
+    background-color:white;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.Instances{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-groups{
+    display: flex;
+    gap: 5px;
+}
+
+.show-groups span {
+    background-color: #ffff;
+    color: #000;
+}
+.togel{
+    background-color: #28C76F;
+    border-radius: 40px;
+    height: 20px;
+    width: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.togel .dot{
+    background-color: #ffff;
+    width: 20px;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.Instances button{
+    padding: 15px 40px;
+    background-color: #28C76F;
+    border-radius: 5px;
+    color: #ffff;
+    border: none;
+}
+.Data-Table{
+    padding: 0px 0px;
+    background-color: #ffff;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+th{
+    background-color: #9B9B9BC9;
+    font-size: 20px;
+    font-weight: 400;
+}
+th {
+    text-align: left;
+    padding: 20px;
+}
+td{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.Data-Table span{
+    color: #374AF9;
+    background-color: #ffff;
+    font-size: 15px;
+    font-weight: 400;
+}

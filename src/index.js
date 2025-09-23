@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import Nav from './shared/components/Header';
 import Config3 from './app/routes/Config3.js';
 import Config1 from './app/routes/Config1.js';
+import Config2 from './app/routes/Config2.js';
+import EstateIV from './features/users/pages/EstateInstalledVersions'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Nav />
-    <Config1 />
+    <EstateIV />
   </React.StrictMode>
 );
 
