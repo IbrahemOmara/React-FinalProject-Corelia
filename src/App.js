@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+// import Nav from './shared/components/Header';
+// import Config3 from './app/routes/Config3.js';
+// import Config1 from './app/routes/Config1.js';
+// import Config2 from './app/routes/Config2.js';
+import EstateIV from './features/users/pages/EstateInstalledVersions'
+import Login from './features/users/pages/Login.js';
+import Register from './features/users/pages/Register.js';
+import Overviews from './features/users/pages/OverViews.js';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path='/' element={<Overviews />}></Route>
+        <Route path='/Login' element={<Login />}></Route>
+        <Route path='/Register' element={<Register />}></Route>
+        <Route path='/EstateIV' element={<EstateIV />}></Route>
+      </Routes>
     </div>
   );
 }
-
-export default App;

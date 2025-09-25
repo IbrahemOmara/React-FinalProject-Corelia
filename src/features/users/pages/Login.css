@@ -1,0 +1,46 @@
+body { 
+    background-color: #646464 !important;
+}
+
+form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 8px;
+}
+.img-box {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+input {
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+form p a {
+    color: #28c76f;
+}

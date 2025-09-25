@@ -1,4 +1,4 @@
-import header from '../components/header.css'
+import './header.css'
 
 export default function Nav(){
     return(

@@ -1,10 +1,12 @@
-import style from './EstateInstalledVersions .css'
+import './EstateInstalledVersions .css'
 import PieChart from "../components/PieChart";
 import ProgressBars from "../components/ProgressBars";
+import Header from '../../../shared/components/Header'
 
 export default function EstateIV(){
     return(
         <div className='container'>
+            <Header />
             <div className="bottom-header sub-header" >
                 <div className="tabs">
                     <a href='/' className="active">Installed Versions </a>
