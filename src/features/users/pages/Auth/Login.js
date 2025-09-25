@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './Login.css'
 
 export default function Login() {
-    const logo = require('../../../shared/icons/logo-corelia 1.png');
+    const logo = require('../../../../shared/icons/logo-corelia 1.png');
     function checkSubmit(e) {
         e.preventDefault();
         window.location.pathname = '/';

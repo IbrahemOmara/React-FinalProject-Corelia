@@ -4,8 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 // import Config1 from './app/routes/Config1.js';
 // import Config2 from './app/routes/Config2.js';
 import EstateIV from './features/users/pages/EstateInstalledVersions'
-import Login from './features/users/pages/Login.js';
-import Register from './features/users/pages/Register.js';
+import Login from './features/users/pages/Auth/Login.js';
+import Register from './features/users/pages/Auth/Register.js';
 import Overviews from './features/users/pages/OverViews.js';
 
 export default function App() {
