@@ -1,12 +1,13 @@
-import style from './config1.css'
-
+import style from './config1.module.css'
+import Header from '../../shared/components/Header'
 export default function Config1(){
     return(
 
-        <div className='container'>
+        <div className={style.container}>
+            <Header />
             <h1>Configuration</h1>
-            <div className='data'>
-                <div className='data-L'>
+            <div className={style.data}>
+                <div className={style['data-L']}>
                     <h3>Monitoring</h3>
                         <a href='/'> <span>improved</span>Monitored servers</a>
                             <p>Add servers to monitor, edit connection credentials, remove or suspend  monitored servers, configure maintenance windows</p>
@@ -29,7 +30,7 @@ export default function Config1(){
                             <p>Get user display retorences for SOL Menitor</p>
                 </div>
 
-                <div className='data-R'>
+                <div className={style['data-R']}>
                     <h3>Alerts and metrics</h3>
                         <a href='/'>Alert settings</a>
                             <p>Enable and disable alert types, change alert thresholds and levels</p>

@@ -1,18 +1,19 @@
-import style from '../routes/config3.css'
+import style from '../routes/config3.module.css'
+import Header from '../../shared/components/Header'
 export default function Config3(){
 
     return(
-        <div className='container'>
-            <div className='top-btn'>
+        <div className={style.container}>
+            <Header />
+            <div className={style['top-btn']}>
                 <a href='/'>Add SQL Server</a>
                 <a href='/'>Add Amazon RDS SQL Server</a>
                 <a href='/'>Add Azure SQL Database</a>
                 <a href='/'>Add Azure SQL Managed Instance</a>
-                <a href='/' className='disable'>Import SQL Server</a>
-                <a href='/' className='disable'>Select  v </a>
+                <a href='/' className={style.disable}>Import SQL Server</a>
+                <a href='/' className={style.disable}>Select  v </a>
             </div>
-
-            <div className='Data-Table'>
+            <div className={style['Data-Table']}>
                 <table>
                     <tr>
                         <th>Server</th>

@@ -1,54 +1,55 @@
-import style from './config2.css'
-
+import style from './config2.module.css'
+import Header from '../../shared/components/Header'
 export default function config2(){
 
     return(
-        <div className='container'>
-            <div className='Compression'>
+        <div className={style.container}>
+            <Header />
+            <div className={style.Compression}>
                 <h3>Compression</h3>
                 <p>Enabling Compression saves disk space by over fifty percent on average , reduces memory usage, and improves performance.</p>
-                <div className='top-btn'>
-                    <a href='/' className='disable'>Estimate data compression savings</a>
+                <div className={style['top-btn']}>
+                    <a href='/' className={style.disable}>Estimate data compression savings</a>
                     <a href='/' >Enable data compression </a>
                 </div>
             </div>
 
-            <div className='Performance'>
+            <div className={style.Performance}>
                 <h3>Performance</h3>
                 <p>Enabling SQL Server features can improve speed and responsiveness.</p>
-                <div className='checklist-all'>
-                    <label class="checklist">Delayed durability
+                <div className={style['checklist-all']}>
+                    <label className={style.checklist}>Delayed durability
                         <input type="checkbox" ></input>
-                        <span class="checkmark"></span>
+                        <span className={style.checkmark}></span>
                     </label>
 
-                    <label class="checklist">Query optimizer hotfixes
+                    <label className={style.checklist}>Query optimizer hotfixes
                         <input type="checkbox"></input>
-                        <span class="checkmark"></span>
+                        <span className={style.checkmark}></span>
                     </label>
 
-                    <label class="checklist">Automatic query tuning
+                    <label className={style.checklist}>Automatic query tuning
                         <input type="checkbox"></input>
-                        <span class="checkmark"></span>
+                        <span className={style.checkmark}></span>
                     </label>
 
-                    <label class="checklist">Batch mode for rowstore
+                    <label className={style.checklist}>Batch mode for rowstore
                         <input type="checkbox"></input>
-                        <span class="checkmark"></span>
+                        <span className={style.checkmark}></span>
                     </label>
                 </div>
             </div>
 
-            <div className='Data-retention'>
+            <div className={style['Data-retention']}>
                 <h3>Data retention</h3>
                 <p>Adjusting how long historical data is retained for will affect the total data size.</p>
-                <div className='warning'>
-                    <i class="fa-solid fa-circle-exclamation fa-xl" style={{color: '#374af9'}}></i>
+                <div className={style.warning}>
+                    <i className={style["fa-solid fa-circle-exclamation fa-xl"]} style={{color: '#374af9'}}></i>
                     <p>Only select “ indefinitely “ if you’re sure you have enough disk space to store all collection data.<span>Total size on disk: 6.87 GB</span></p>
                 </div>
             </div>
 
-            <div className='Data-Table'>
+            <div className={style['Data-Table']}>
                 <h3>Trend data</h3>
                 <p>Data used to analyze long term performance and provide performance baselines.</p>
                 <table>
