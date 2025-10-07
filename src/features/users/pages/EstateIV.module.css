@@ -4,7 +4,29 @@
 }
 
 .sub-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
     background-color: #BEBEBE;
+}
+
+.sub-header .tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.sub-header .tabs a{
+    color: black;
+    text-decoration: none;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.sub-header .tabs .active{
+    color: #fff;
+    border-bottom: solid 5px #28C76F;
 }
 
 .content, .Data-Table{
@@ -48,7 +70,7 @@
 .chart span{
     background-color: white;
 }
-canvas{
+.chart canvas{
     width: 300px !important;
     height: 300px !important;
 }
@@ -124,29 +146,36 @@ canvas{
     padding-bottom: 20px;
     margin-bottom: 50px;
 }
-table {
+.Data-Table table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
 }
-th{
+
+.IVtable tr{
+    background-color: #fff;
+    border-bottom: solid 1px black;
+}
+
+.IVtable th{
     background-color: #9B9B9BC9;
     font-size: 20px;
     font-weight: 400;
 }
-th {
+.IVtable th {
     text-align: left;
     padding: 20px;
 }
-td{
+.IVtable td{
     color: #000;
     font-size: 15px;
     font-weight: 400;
 }
 
-.Data-Table span{
+.IVtable span{
     color: #374AF9;
     background-color: #ffff;
     font-size: 15px;
     font-weight: 400;
+    padding: 0px;
 }

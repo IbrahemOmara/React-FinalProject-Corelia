@@ -33,11 +33,12 @@ header{
     color: #fff;
     font-size: 25px;
 }
-.top-header .top-R input{
+.top-header .top-R .search{
     padding:10px 50px;
     width: 30%;
     border-radius: 5px;
     border: none;
+    margin-bottom: 0px;
 }
 
 
@@ -76,5 +77,3 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
-
-

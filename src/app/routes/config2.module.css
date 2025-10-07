@@ -1,38 +1,40 @@
 .container{
-
-    padding: 20px 100px;
     min-height: 100vh;
-    
+    background-color: #F1EEEE;
+}
+.C2container{
+    margin: 20px 100px;
+    background-color: #FFFFFF;
 }
 
-.Compression, .Performance, .Data-retention{
+.C2container .Compression, .Performance, .Data-retention{
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 10px 20px;
     background-color: #ffff;
 }
-.Compression h3, .Performance h3, .Data-retention h3{
+.C2container .Compression h3, .Performance h3, .Data-retention h3{
     font-size: 20px;
     font-weight: 400;
 }
-.Data-Table h3{
+.C2container .Data-Table h3{
     
     font-size: 20px;
     font-weight: 400;
     margin: 0px;
     padding: 10px 20px;
 }
-.Compression p, .Performance p, .Data-retention p, .Data-Table p{
+.C2container .Compression p, .Performance p, .Data-retention p, .Data-Table p{
     background-color: #ffff;
     color: #6B6877;
     font-size: 15px;
     font-weight: 400;
 }
-.Data-Table p{
+.C2container .Data-Table p{
     padding: 0px 20px;
 }
-.container .Compression .top-btn{
+.container .C2container .Compression .top-btn{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -41,7 +43,7 @@
     background-color: #ffff;
 }
 
-.container .top-btn a{
+.container .C2container .top-btn a{
     border-radius: 5px;
     padding: 10px 10px;
     color: aliceblue;
@@ -50,7 +52,7 @@
     cursor: pointer;
 }
 
-.container .top-btn .disable{
+.container .C2container .top-btn .disable{
     background-color: #B9B9C3;
     color: #646464;
     cursor: progress;

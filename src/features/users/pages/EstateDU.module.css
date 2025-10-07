@@ -157,27 +157,34 @@ canvas{
     padding-bottom: 20px;
     margin-bottom: 50px;
 }
-table {
+.DUtable table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
 }
-th{
+
+.DUtable tr {
+    background-color: #fff;
+    border-bottom: solid 1px black;
+}
+.DUtable th{
     background-color: #9B9B9BC9;
     font-size: 15px;
     font-weight: 400;
 }
-th {
+.DUtable th {
     text-align: left;
-    padding:20px 8px;
+    padding:20px ;
 }
-td{
+.DUtable td{
     color: #000;
     font-size: 15px;
     font-weight: 400;
+    padding:30px 20px;
 }
 
-.Data-Table span{
+
+.Data-Table .DUtable span{
     color: #374AF9;
     background-color: #ffff;
     font-size: 15px;

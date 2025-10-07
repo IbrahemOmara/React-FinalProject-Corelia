@@ -1,11 +1,14 @@
 .container{
-
-    padding: 20px 100px;
     min-height: 100vh;
-
+    background-color: #F1EEEE;
 }
 
-.container .top-btn{
+.C3container{
+    margin: 20px 100px;
+    background-color: #FFFFFF;
+}
+
+.container .C3container .top-btn{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -14,7 +17,7 @@
     background-color: #ffff;
 }
 
-.container .top-btn a{
+.container .C3container .top-btn a{
     border-radius: 5px;
     padding: 10px 10px;
     color: aliceblue;
@@ -23,39 +26,40 @@
     cursor: pointer;
 }
 
-.container .top-btn .disable{
+.container .C3container .top-btn .disable{
     background-color: #B9B9C3;
     color: #646464;
     cursor: progress;
 }
 
-.Data-Table{
+.C3container .Data-Table{
     padding: 0px 0px;
     background-color: #ffff;
 }
-table {
+.C3container table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-
 }
-th{
+.C3container th{
     background-color: #9B9B9BC9;
 }
 
 
-th, td {
+.C3container th, .C3container td {
     text-align: left;
-    padding: 30px 50px;
+    padding: 30px 40px;
+    color: #000;
+    font-size: 15px;
 }
 
-tr{
+.C3container tr{
     background-color: #f2f2f2;
     border-bottom: solid 1px black;
 }
 
-.Data-Table span{
-    color: #646464;
+.C3container .Data-Table span{
+    color: #000;
     font-size: smaller;
     padding: 0px;
     background-color: #F1EEEE;

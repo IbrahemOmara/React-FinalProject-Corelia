@@ -1,3 +1,6 @@
+.container{
+    background-color: #F1EEEE;
+}
 .container .data{
     display: flex;
     flex-direction: row;
@@ -5,7 +8,10 @@
     background-color: #fff;
     padding-bottom: 100px;
 }
-
+.C1container{
+    margin: 20px 100px;
+    background-color: #FFFFFF;
+}
 h1{
     margin: 0px;
     padding: 20px;

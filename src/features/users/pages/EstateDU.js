@@ -1,25 +1,25 @@
-import styles from "./EstateDU.module.css"
+import DUstyles from "./EstateDU.module.css"
 import MyLineChart from '../components/MyLineChart'
 import Header from '../../../shared/components/Header'
 
 export default function EstateDU(){
     return(
-        <div className={styles.container}>
+        <div className={DUstyles.container}>
             <Header />
-            <div className={styles["sub-header"]}>
-                <div className={styles.tabs}>
+            <div className={DUstyles["sub-header"]}>
+                <div className={DUstyles.tabs}>
                 <a href="/" >Installed Versions </a>
-                <a href="/" className={styles.active}>Disk Usage</a>
+                <a href="/" className={DUstyles.active}>Disk Usage</a>
                 <a href="/">Backups</a>
                 <a href="/">SQL Agent Jobs</a>
                 <a href="/">SQL Agent Licensing</a>
                 </div>
             </div>
 
-            <div className={styles.content}>
-                <div className={styles["Installed-Versions"]}>
+            <div className={DUstyles.content}>
+                <div className={DUstyles["Installed-Versions"]}>
                 <h3>Installed Versions</h3>
-                <div className={styles["select-box"]}>
+                <div className={DUstyles["select-box"]}>
                     <select>
                     <option value="0">All groups</option>
                     </select>
@@ -33,15 +33,15 @@ export default function EstateDU(){
                 </div>
                 </div>
 
-                <div className={styles.Summery}>
+                <div className={DUstyles.Summery}>
                     <h3>Summery</h3>
-                    <div className={styles.chart}>
+                    <div className={DUstyles.chart}>
                         <MyLineChart />
-                        <div className={styles.Data}>
+                        <div className={DUstyles.Data}>
                             <h4>Estate Summary</h4>
                             <p>This is a summary of all the servers in your estate </p>
                             <div style={{display:"flex"}}>
-                                <div className={styles["Lasted-update"]}>
+                                <div className={DUstyles["Lasted-update"]}>
                                 
                                 <span>Current space used</span>
                                 <span>Current capacity</span>
@@ -49,7 +49,7 @@ export default function EstateDU(){
                                 <span>Projected change</span>
                                 </div>
 
-                                <div className={styles["Release-date"]}>
+                                <div className={DUstyles["Release-date"]}>
                                 
                                 <span>47.98 Tb (30%)</span>
                                 <span>160.73 Tb</span>
@@ -63,10 +63,10 @@ export default function EstateDU(){
                 </div>
 
                 <h3>Instances</h3>
-                <div className={styles.Instances}>
-                <div className={styles["show-groups"]}>
-                    <div className={styles.togel}>
-                    <div className={styles.dot}></div>
+                <div className={DUstyles.Instances}>
+                <div className={DUstyles["show-groups"]}>
+                    <div className={DUstyles.togel}>
+                    <div className={DUstyles.dot}></div>
                     </div>
                     <span>show groups</span>
                 </div>
@@ -74,8 +74,8 @@ export default function EstateDU(){
                 </div>
             </div>
 
-            <div className={styles["Data-Table"]}>
-                <table>
+            <div className={DUstyles["Data-Table"]}>
+                <table className={DUstyles.DUtable}>
                 <tr>
                     <th>Server name</th>
                     <th>Disk</th>

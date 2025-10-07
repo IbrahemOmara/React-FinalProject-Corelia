@@ -1,15 +1,15 @@
-import styles from  './EstateIV.module.css'
+import IVstyles from  './EstateIV.module.css'
 import PieChart from "../components/PieChart";
 import ProgressBars from "../components/ProgressBars";
 import Header from '../../../shared/components/Header'
 
 export default function EstateIV(){
     return(
-        <div className={styles.container}>
+        <div className={IVstyles.container}>
             <Header />
-            <div className={styles["sub-header"]}>
-                <div className={styles.tabs}>
-                <a href="/" className={styles.active}>Installed Versions </a>
+            <div className={IVstyles["sub-header"]}>
+                <div className={IVstyles.tabs}>
+                <a href="/" className={IVstyles.active}>Installed Versions </a>
                 <a href="/">Disk Usage</a>
                 <a href="/">Backups</a>
                 <a href="/">SQL Agent Jobs</a>
@@ -17,10 +17,10 @@ export default function EstateIV(){
                 </div>
             </div>
 
-            <div className={styles.content}>
-                <div className={styles["Installed-Versions"]}>
+            <div className={IVstyles.content}>
+                <div className={IVstyles["Installed-Versions"]}>
                 <h3>Installed Versions</h3>
-                <div className={styles["select-box"]}>
+                <div className={IVstyles["select-box"]}>
                     <select>
                     <option value="0">All groups</option>
                     </select>
@@ -36,13 +36,13 @@ export default function EstateIV(){
                 </div>
                 </div>
 
-                <div className={styles.Summery}>
+                <div className={IVstyles.Summery}>
                 <h3>Summery</h3>
-                <div className={styles.chart}>
+                <div className={IVstyles.chart}>
                     <PieChart />
                     <ProgressBars />
 
-                    <div className={styles["Lasted-update"]}>
+                    <div className={IVstyles["Lasted-update"]}>
                     <h4>Lasted update</h4>
                     <span>RTM CU10</span>
                     <span>RTM CU10</span>
@@ -51,7 +51,7 @@ export default function EstateIV(){
                     <span>RTM CU10</span>
                     </div>
 
-                    <div className={styles["Release-date"]}>
+                    <div className={IVstyles["Release-date"]}>
                     <h4>Release date</h4>
                     <span>06 Apr 2016</span>
                     <span>06 Apr 2016</span>
@@ -63,10 +63,10 @@ export default function EstateIV(){
                 </div>
 
                 <h3>Instances</h3>
-                <div className={styles.Instances}>
-                <div className={styles["show-groups"]}>
-                    <div className={styles.togel}>
-                    <div className={styles.dot}></div>
+                <div className={IVstyles.Instances}>
+                <div className={IVstyles["show-groups"]}>
+                    <div className={IVstyles.togel}>
+                    <div className={IVstyles.dot}></div>
                     </div>
                     <span>show groups</span>
                 </div>
@@ -74,8 +74,8 @@ export default function EstateIV(){
                 </div>
             </div>
 
-            <div className={styles["Data-Table"]}>
-                <table>
+            <div className={IVstyles["Data-Table"]}>
+                <table className={IVstyles.IVtable}>
                 <tr>
                     <th>Name</th>
                     <th>Versions</th>
