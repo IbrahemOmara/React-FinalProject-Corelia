@@ -14,7 +14,7 @@ export default function Register() {
                 <input type="email" placeholder="Email Address"></input>
                 <input type='password' placeholder='Password'></input>
                 <input type='password' placeholder='Confirm Password'></input>
-                <button className={logstyle['btn-green']} type='submit'>Register</button>
+                <button className='btn-green' type='submit'>Register</button>
                 <p>Already have account ? <Link to='/Login' >Log in</Link></p>
             </form>
         </div>

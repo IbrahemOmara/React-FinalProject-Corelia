@@ -13,7 +13,7 @@ export default function Login() {
                 <div className={logstyle["img-box"]}><img src={logo} alt='logo'></img></div>
                 <input type="email" placeholder="Email Address"></input>
                 <input type='password' placeholder='Password'></input>
-                <button className={logstyle['btn-green']} type='submit'>Log in</button>
+                <button className='btn-green' type='submit'>Log in</button>
                 <p>Don't have any account ? <Link to='/Register'>Register</Link></p>
             </form>
         </div>
