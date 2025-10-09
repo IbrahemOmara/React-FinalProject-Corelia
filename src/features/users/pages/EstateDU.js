@@ -1,61 +1,55 @@
-import DUstyles from "./EstateDU.module.css"
+import "./EstateDU.css"
 import MyLineChart from '../components/MyLineChart'
 import Header from '../../../shared/components/Header'
 
 export default function EstateDU(){
     return(
-        <div className={DUstyles.container}>
+        <div className='container'>
             <Header />
-            <div className={DUstyles["sub-header"]}>
-                <div className={DUstyles.tabs}>
+            <div className='sub-header'>
+                <div className='tabs'>
                 <a href="/" >Installed Versions </a>
-                <a href="/" className={DUstyles.active}>Disk Usage</a>
+                <a href="/" className='active'>Disk Usage</a>
                 <a href="/">Backups</a>
                 <a href="/">SQL Agent Jobs</a>
                 <a href="/">SQL Agent Licensing</a>
                 </div>
             </div>
-
-            <div className={DUstyles.content}>
-                <div className={DUstyles["Installed-Versions"]}>
-                <h3>Installed Versions</h3>
-                <div className={DUstyles["select-box"]}>
-                    <select>
-                    <option value="0">All groups</option>
-                    </select>
-                    <select>
-                    <option value="0">Filter</option>
-                    </select>
-                    <select>
-                    <option value="0">All disks</option>
-                    </select>
-                    
-                </div>
+            <div className='content'>
+                <div className='Installed-Versions'>
+                    <h3>Installed Versions</h3>
+                    <div className='select-box'>
+                        <select>
+                            <option value="0">All groups</option>
+                        </select>
+                        <select>
+                            <option value="0">Filter</option>
+                        </select>
+                        <select>
+                            <option value="0">All disks</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div className={DUstyles.Summery}>
+                <div className='Summery'>
                     <h3>Summery</h3>
-                    <div className={DUstyles.chart}>
+                    <div className='chart'>
                         <MyLineChart />
-                        <div className={DUstyles.Data}>
+                        <div className='Data'>
                             <h4>Estate Summary</h4>
                             <p>This is a summary of all the servers in your estate </p>
                             <div style={{display:"flex"}}>
-                                <div className={DUstyles["Lasted-update"]}>
-                                
-                                <span>Current space used</span>
-                                <span>Current capacity</span>
-                                <span>Projected space used in one year</span>
-                                <span>Projected change</span>
+                                <div className='Lasted-update'>
+                                    <span>Current space used</span>
+                                    <span>Current capacity</span>
+                                    <span>Projected space used in one year</span>
+                                    <span>Projected change</span>
                                 </div>
-
-                                <div className={DUstyles["Release-date"]}>
-                                
-                                <span>47.98 Tb (30%)</span>
-                                <span>160.73 Tb</span>
-                                <span>172.82 Tb (108%)</span>
-                                
-                                <span>+124.89 Tb</span>
+                                <div className='Release-date'>
+                                    <span>47.98 Tb (30%)</span>
+                                    <span>160.73 Tb</span>
+                                    <span>172.82 Tb (108%)</span>
+                                    <span>+124.89 Tb</span>
                                 </div>
                             </div>
                         </div>
@@ -63,10 +57,10 @@ export default function EstateDU(){
                 </div>
 
                 <h3>Instances</h3>
-                <div className={DUstyles.Instances}>
-                <div className={DUstyles["show-groups"]}>
-                    <div className={DUstyles.togel}>
-                    <div className={DUstyles.dot}></div>
+                <div className='Instances'>
+                <div className='show-groups'>
+                    <div className='togel'>
+                    <div className='dot'></div>
                     </div>
                     <span>show groups</span>
                 </div>
@@ -74,8 +68,8 @@ export default function EstateDU(){
                 </div>
             </div>
 
-            <div className={DUstyles["Data-Table"]}>
-                <table className={DUstyles.DUtable}>
+            <div className='Data-Table'>
+                <table className='DUtable'>
                 <tr>
                     <th>Server name</th>
                     <th>Disk</th>

@@ -4,11 +4,12 @@ header{
     flex-direction: column;
 }
 
-.top-header{
+.top-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #646464;
     background-color: #646464;
     padding: 10px 100px;
 }
@@ -63,7 +64,7 @@ header{
     padding: 20px 0px;
     cursor: pointer;
 }
-.bottom-header .tabs .active{
+.active{
     color: #fff;
     border-bottom: solid 5px #28C76F;
 }

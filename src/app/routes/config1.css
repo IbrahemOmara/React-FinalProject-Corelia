@@ -12,7 +12,7 @@
     margin: 20px 100px;
     background-color: #FFFFFF;
 }
-h1{
+.C1container h1{
     margin: 0px;
     padding: 20px;
     background-color: #9B9B9BC9;
@@ -35,7 +35,7 @@ h1{
         padding-right: 100px;
 }
 
-span{
+.data .data-L span{
     background-color: #28C76F;
     color: #fff;
     border-radius: 5px;

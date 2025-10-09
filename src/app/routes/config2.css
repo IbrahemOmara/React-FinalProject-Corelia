@@ -1,11 +1,4 @@
-.container{
-    min-height: 100vh;
-    background-color: #F1EEEE;
-}
-.C2container{
-    margin: 20px 100px;
-    background-color: #FFFFFF;
-}
+
 
 .C2container .Compression, .Performance, .Data-retention{
     display: flex;
@@ -108,7 +101,8 @@ tr{
 }
 
 select{
-    padding: 5px;
+    padding: 8px;
+    height: fit-content;
     border-radius: 5px;
     color: #6B6877;
     border: solid 1px black;

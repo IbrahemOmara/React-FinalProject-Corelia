@@ -1,4 +1,4 @@
-import logstyle from './Login.module.css'
+import './Login.css'
 import { Link } from 'react-router-dom'
 
 export default function Register() {
@@ -8,9 +8,9 @@ export default function Register() {
         window.location.pathname = '/Login';
     }
     return(
-        <div className={logstyle['login-container']}>
+        <div className='login-container'>
             <form onSubmit={checkSubmit}>
-                <div className={logstyle["img-box"]}><img src={logo} alt='logo'></img></div>
+                <div className="img-box"><img src={logo} alt='logo'></img></div>
                 <input type="email" placeholder="Email Address"></input>
                 <input type='password' placeholder='Password'></input>
                 <input type='password' placeholder='Confirm Password'></input>
